@@ -1,0 +1,11 @@
+{
+  "success": {
+    "message": "Your request successfully sent"
+  },
+  "errors": {
+    "username": "You need to provide your name",
+    "phone": "You need to provide your phone number",
+    "email": "You need to provide your email address",
+    "agree": "You need to agree with Privacy Policy"
+  }
+}

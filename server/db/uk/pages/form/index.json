@@ -1,0 +1,243 @@
+{
+  "id": "page-2",
+  "meta": {
+    "seo": {
+      "title": "page-2 title uk",
+      "description": "Page description",
+      "og": {
+        "title":  "OpenGraph Title 2",
+        "description":  "OpenGraph Title",
+        "image": "https://site.com/storage/og.png"
+      },
+      "breadcrumbs": [
+        {"label": "Main2", "url": "/"},
+        {"label": "About", "url": "/about"},
+        {"label": "Special Offers"}
+      ],
+      "robots": "index,follow"
+    },
+    "locales": [
+      {
+        "label": "EN",
+        "code": "en",
+        "default": false,
+        "current": false,
+        "url": "http://localhost:3030/en/form"
+      },
+      {
+        "label": "UA",
+        "code": "uk",
+        "default": true,
+        "current": true,
+        "url": "http://localhost:3030/form"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "BlockForm",
+      "level": 1,
+      "attributes": {
+        "title": "Base Form example",
+        "submitButton": "Sign up",
+        "url": "http://localhost:3030/fake-api/submit",
+        "fields": [
+          {
+            "name": "username",
+            "type": "text",
+            "label": "Ваше ім'я",
+            "required": true,
+            "placeholder": null,
+            "hint": null
+          },
+          {
+            "name": "phone",
+            "type": "text",
+            "label": "Phone number",
+            "required": true,
+            "placeholder": null,
+            "hint": null
+          },      
+          {
+            "name": "email",
+            "type": "text",
+            "label": "E-mail",
+            "required": true,
+            "placeholder": null,
+            "hint": null
+          },
+          {
+            "name": "comment",
+            "type": "textarea",
+            "label": "Ваш коментар",
+            "required": true,
+            "placeholder": null
+          },
+          {
+            "name": "agree",
+            "type": "checkbox",
+            "label": "Даю згоду на обробку персональних даних"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BlockFormCustomGrid",
+      "level": 1,
+      "attributes": {
+        "title": "Base Form with custom fields layout and dark theme",
+        "submitButton": "Sign up",
+        "theme": "dark",
+        "url": "http://localhost:3030/fake-api/submit",
+        "fields": [
+          {
+            "name": "username",
+            "type": "text",
+            "label": "Ваше ім'я",
+            "required": true,
+            "placeholder": null,
+            "hint": null
+          },
+          {
+            "name": "surname",
+            "type": "text",
+            "label": "Ваше прізвище",
+            "required": true,
+            "placeholder": null,
+            "hint": null
+          },
+          {
+            "name": "phone",
+            "type": "text",
+            "label": "Phone number",
+            "required": true,
+            "placeholder": null,
+            "hint": null
+          },
+          {
+            "name": "email",
+            "type": "text",
+            "label": "E-mail",
+            "required": true,
+            "placeholder": null,
+            "hint": null
+          },
+          {
+            "name": "contact[]",
+            "type": "checkboxGroup",
+            "label": "Як з Вами зв'язатися?",
+            "items": [
+              {
+                "label": "Телефоном",
+                "id":  1
+              },
+              {
+                "label": "По e-mail",
+                "id": 2
+              }
+            ]
+          },
+          {
+            "name": "agree",
+            "type": "checkbox",
+            "label": "Даю згоду на обробку персональних даних"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BlockFormWithModal",
+      "level": 1,
+      "attributes": {
+        "title": "Base Form with modal example",
+        "submitButton": "Sign up",
+        "url": "http://localhost:3030/fake-api/submit",
+        "fields": [
+          {
+            "name": "username",
+            "type": "text",
+            "label": "Ваше ім'я",
+            "required": true,
+            "placeholder": "Ваше ім'я...",
+            "hint": null
+          },
+          {
+            "name": "phone",
+            "type": "text",
+            "label": "Phone number",
+            "required": true,
+            "placeholder": "Ваш номер телефона...",
+            "hint": null
+          },      
+          {
+            "name": "email",
+            "type": "text",
+            "label": "E-mail",
+            "required": true,
+            "placeholder": "Ваш e-mail...",
+            "hint": null
+          },
+          {
+            "name": "comment",
+            "type": "textarea",
+            "label": "Ваш коментар",
+            "required": true,
+            "placeholder": null
+          },
+          {
+            "name": "subscribe",
+            "type": "radio",
+            "label": "Як часто хочете отримувати листи від нас?",
+            "items": [
+              {
+                "label": "Щотижня",
+                "id": "weekly"
+              },
+              {
+                "label": "Щомісяця",
+                "id": "monthly"
+              },
+              {
+                "label": "Не хочу отримувати",
+                "id": "never"
+              }
+            ]
+          },
+          {
+            "name": "select",
+            "type": "dropdown",
+            "placeholder": "Нічого не вибрано",
+            "label": "Оберіть опцію:",
+            "items": [
+              {
+                "label": "Опція 1",
+                "id": 1
+              },
+              {
+                "label": "Опція 2",
+                "id": 2
+              },
+              {
+                "label": "Опція 3 з дуже-дуже довгим-предовгим описом",
+                "id": 3
+              },
+              {
+                "label": "Опція 4",
+                "id": 4
+              },
+              {
+                "label": "Опція 5",
+                "id": 5
+              }
+            ]
+          },
+          {
+            "name": "agree",
+            "type": "checkbox",
+            "label": "Даю згоду на обробку персональних даних"
+          }
+        ]
+      }
+    }
+  ]
+}

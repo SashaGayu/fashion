@@ -1,0 +1,27 @@
+.visually-hidden {
+  @include visuallyHidden;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-grow {
+  flex-grow: 1;
+}
+
+.f-shrink {
+  flex-shrink: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

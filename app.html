@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head>
+    <!-- FAVICON -->
+    <!-- Generate with https://realfavicongenerator.net/ and paste here -->
+
+    <!-- POLYFILLS (loads only if required) add to query if new needed-->
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=IntersectionObserver%2CIntersectionObserverEntry%2CObject.assign%2CObject.entries%2CArray.prototype.includes%2CArray.prototype.find%2CString.prototype.includes%2CMutationObserver"></script>
+
+    <!-- PRELOADER files (loads before nuxt and hides components mount) -->
+    <link rel="stylesheet" type="text/css" href="/preloader/preloader.css">
+    <script src="/preloader/preloader.js" defer></script>
+
+    <!-- TAGS FROM '~/nuxt-config/_head' & '~/mixins/seo-mixin' -->
+    {{ HEAD }}
+  </head>
+
+  <body {{ BODY_ATTRS }}>
+    <!-- Svg sprite -->
+    <svg class="svg-defs">
+      <symbol id="icon-arrow-down" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.757812 5L1.46492 4.29289L5.70756 8.53553L5.00045 9.24264L0.757812 5Z" fill="currentColor"/>
+        <path d="M8.53599 4.29289L9.24309 5L5.00045 9.24264L4.29335 8.53553L8.53599 4.29289Z" fill="currentColor"/>
+      </symbol>
+    </svg>
+    <!--Preloader must be first-->
+    <div class="preloader">
+      <div class="preloader__text-wrapper">
+        <div class="preloader__text">
+          fashion
+        </div>
+      </div>
+    </div>
+
+    <!--App instance-->
+    {{ APP }}
+
+    <!--Modals container-->
+    <div id="modals-container"></div>
+  </body>
+</html>

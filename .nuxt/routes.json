@@ -1,0 +1,15 @@
+[
+  {
+    "path": "/:lang([a-z]{2})?",
+    "name": "home",
+    "component": "C:\\\\Users\\\\Home\\\\WebstormProjects\\\\practice\\\\pages\\\\-.vue"
+  },
+  {
+    "path": "/:lang([a-z]{2})?/:level1?/:level2?/:level3?",
+    "component": "C:\\\\Users\\\\Home\\\\WebstormProjects\\\\practice\\\\pages\\\\-.vue"
+  },
+  {
+    "path": "/:lang([a-z]{2})?/:level1?/:level2?/:level3?/*",
+    "component": "C:\\\\Users\\\\Home\\\\WebstormProjects\\\\practice\\\\pages\\\\-.vue"
+  }
+]

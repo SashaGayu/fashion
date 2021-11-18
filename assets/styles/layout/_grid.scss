@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  max-width: 1666px;
+  margin: 0 auto;
+
+  @include respOnly(lg) {
+    max-width: 1072px;
+  }
+
+  @include respOnly(md) {
+    max-width: 740px;
+  }
+
+  @include respOnly(sm) {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.w_1-2 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.w_1-3 {
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+
+.w_2-3 {
+  flex-basis: 66.666%;
+  max-width: 66.666%;
+}
+
+.w_1-4 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.w_1-1 {
+  flex-basis: 100%;
+  max-width: 100%;
+}

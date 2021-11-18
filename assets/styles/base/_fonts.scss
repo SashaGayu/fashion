@@ -1,0 +1,26 @@
+// SOFIA PRO
+@include font-face("SofiaPro", "SofiaProBold", 700);   // Bold
+@include font-face("SofiaPro", "SofiaProRegular", 400);   // Regular
+@include font-face("SofiaPro", "SofiaProLight", 100);   // Light
+
+/*
+if custom italic font needed, register it like this;
+otherwise browser font style algorithm is applied
+*/
+// @include font-face("SofiaPro", "SofiaProLight", 100, light);   // Light Italic
+
+// Helvetica
+@include font-face("HelveticaNeue", "HelveticaNeueCyr-Bold", 700);   // Bold
+@include font-face("HelveticaNeue", "HelveticaNeueCyr-Roman", 400);   // Regular
+@include font-face("HelveticaNeue", "HelveticaNeueCyr-Light", 100);   // Light
+
+// Montserrat
+@include font-face("Montserrat", "Montserrat-Thin", 100); // Thin
+@include font-face("Montserrat", "Montserrat-ExtraLight", 200); // Extra Light
+@include font-face("Montserrat", "Montserrat-Light", 300); // Light
+@include font-face("Montserrat", "Montserrat-Regular", 400); // Normal
+@include font-face("Montserrat", "Montserrat-Medium", 500); // Medium
+@include font-face("Montserrat", "Montserrat-SemiBold", 600); // Semi Bold
+@include font-face("Montserrat", "Montserrat-Bold", 700); // Bold
+@include font-face("Montserrat", "Montserrat-ExtraBold", 800); // Extra Bold
+@include font-face("Montserrat", "Montserrat-Black", 900); // Black

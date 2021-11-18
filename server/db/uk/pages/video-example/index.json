@@ -1,0 +1,95 @@
+{
+  "id": "page-2",
+  "meta": {
+    "seo": {
+      "title": "page-2 title",
+      "description": "Page description",
+      "og": {
+        "title":  "OpenGraph Title 2",
+        "description":  "OpenGraph Title",
+        "image": "https://site.com/storage/og.png"
+      },
+      "breadcrumbs": [
+        {"label": "Main2", "url": "/"},
+        {"label": "About", "url": "/about"},
+        {"label": "Special Offers"}
+      ],
+      "robots": "index,follow"
+    },
+    "locales": [
+      {
+        "label": "EN",
+        "code": "en",
+        "default": false,
+        "current": false,
+        "url": "http://localhost:3030/en/page-2"
+      },
+      {
+        "label": "UA",
+        "code": "uk",
+        "default": true,
+        "current": true,
+        "url": "http://localhost:3030/page-2"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "BlockVideoAnimated",
+      "attributes": {
+        "title": "Testing VideoAnimated.vue",
+        "video": {
+          "src": {
+            "mp4": "/video/countdown.mp4",
+            "webm": "/video/countdown.webm"
+          }
+        },
+        "videoOptions": {
+          "startFrom": 3.18,
+          "steps": [0, 1.15, 2.18, 3.18, 4.2, 5.2, 6.2, 7.2, 8.2, 10],
+          "duration": 10
+        },
+        "buttons": {
+          "next": "Play next",
+          "prev": "Rewind"
+        },
+        "descriptions": {
+          "mess1": "Rewindable video which accepts animation steps. Looping.",
+          "mess2": "Can be initially paused or play first scene as soon as element is in viewport",
+          "mess3": "Starting animation point is configurable.",
+          "mess4": "It is possible to play entire video backwards by default.",
+          "mess5": "Navigate through steps by click.",
+          "mess6": "Set initial appear animation other than default (from opacity)."
+        }
+      }
+    },
+    {
+      "id": "BlockFullscreen",
+      "level": 2,
+      "attributes": {
+        "message": "Example with long animation scenes. Video stops if it's out of viewport at the middle of scene and resumed after entering viewport again.",
+        "video": {
+          "src": {
+            "mp4": "/video/bg_video.mp4"
+          }
+        },
+        "steps": [0, 6.0, 14, 20.5, 33.1, 44.2, 53.5, 59.3, 65, 75, 86, 94, 103, 118, 131.4],
+        "buttons": {
+          "next": "Play next",
+          "prev": "Rewind"
+        }
+      }
+    },
+    {
+      "id": "BlockVideo",
+      "attributes": {
+        "video": {
+          "src": {
+            "mp4": "/video/bg_video.mp4"
+          }
+        },
+        "message": "BaseVideo.vue; lazy load and autoplay are configurable. For  autoplay video, in/out viewport events trigger playing/pausing."
+      }
+    }
+  ]
+}

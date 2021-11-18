@@ -1,0 +1,15 @@
+.form {
+  &__label {
+    height: 58px;
+    padding: 15px 0;
+    font-family: $f-secondary;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__input {
+    @include is(ios) {
+      font-size: 16px;
+    }
+  }
+}
